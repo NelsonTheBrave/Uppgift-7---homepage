@@ -10,6 +10,7 @@
 html {
   background-color: rgb(54, 210, 54);
   font-size: 23px;
+  scroll-behavior: smooth;
 }
 
 /* ██████████ HEADER █████████████████████ */
