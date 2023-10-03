@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dancing+Script&family=Hi+Melody&family=Londrina+Shadow&family=Londrina+Sketch&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  /* box-sizing: border-box; */
+  /* padding: 0; */
+  margin: 0; /* Get rid of extra margins outside of HTML */
+}
+
+html {
+  background-color: rgb(54, 210, 54);
+  font-size: 23px;
+}
+
+/* ██████████ HEADER █████████████████████ */
+
+header {
+  background: linear-gradient(rgba(0, 100, 0, 0.9),rgba(0, 100, 0,0.9)),url('jungle.jpg') bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nameAndPic {
+  margin: 100px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#headline {
+  font-family: "Londrina Sketch", cursive;
+  font-size: 100px;
+}
+
+.nameAndPic > img {
+  height: auto;
+  width: 200px;
+  margin: 0 auto 10px auto;
+  border: 5px dashed rgb(6, 35, 6);
+}
+
+.navigation {
+  background-color: rgb(5, 59, 5);
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px dotted black;
+  border-top: 5px dotted black;
+}
+
+.navItems {
+  width: 225px;
+  height: 50px;
+}
+
+.navItems > a {
+  display: block;
+  font-family: "Hi Melody", cursive;
+  color: rgb(13, 197, 49);
+  background-color: inherit;
+  font-size: 35px;
+  font-weight: 900;
+  border: none;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.navItems > a:hover {
+  color: cornsilk;
+  font-size: 40px;
+  margin: 0 10px;
+  transform: translate(0, -3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* ███████████████ MAIN SECTION ██████████████████ */
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > section {
+  font-family: "Hi Melody", cursive;
+  padding: 100px 0;
+}
+
+.mainContainers {
+  margin: 0 20% 0 20%;
+}
+
+.mainContainers h2 {
+  font-size: 45px;
+}
+
+#about {
+  background: linear-gradient(rgba(54, 210, 54, 0.95),rgba(54, 210, 54, 0.95)),url('jungle.jpg') center;
+}
+
+#projects {
+  background: linear-gradient(rgba(183, 108, 11, 0.7),rgba(183, 108, 11,0.7)),url('code.jpg');
+  color: rgb(183, 209, 180);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectsContainer > a {
+  background-color: rgb(172, 36, 172);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  max-width: 450px;
+}
+
+.projectsContainer > a > img {
+  width: 100%;
+  max-width: 750px;
+}
+
+.projectsContainer > a > p {
+  color: pink;
+background-color: transparent;  
+font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin: none;
+  /* align-items: center; */
+}
+
+.projectsContainer > a:hover {
+  background-color: rgb(180, 75, 37);
+}
+
+#experience {
+  background-color: rgb(150, 10, 10);
+  color: white;
+}
+
+#experience p {
+  margin: 0 0 30px 0;
+}
+
+#experience span {
+  font-size: 40px;
+  color: pink;
+}
+
+.experienceItem {
+  margin: 40px 0;
+  cursor: pointer;
+}
+
+.popupBoxes {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  background-color: rgb(144, 77, 88);
+}
+
+.fa {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+/* ██████████ FOOTER █████████████ */
+
+footer {
+  background-color: rgb(154, 143, 93);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-top: 5px dashed black;
+  padding: 40px 0 100px 0;
+}
+
+footer > h2 {
+  font-family: "Londrina Sketch", cursive;
+  font-size: 50px;
+  margin: 30px auto 5px auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.linksContainer {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linksContainer > a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: none;
+  margin: 0 15px;
+  font-size: 40px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  /* transition: all 0.2s ease-in-out; */
+}
+
+.linksContainer > a:hover {
+  font-size: 40px;
+  margin: 0 17px;
+  transform: rotate(45deg);
+ transition: all 0.2s ease-in-out; 
+}
