@@ -16,7 +16,8 @@ html {
 /* ██████████ HEADER █████████████████████ */
 
 header {
-  background: linear-gradient(rgba(0, 100, 0, 0.9),rgba(0, 100, 0,0.9)),url('jungle.jpg') bottom;
+  background: linear-gradient(rgba(0, 100, 0, 0.9), rgba(0, 100, 0, 0.9)),
+    url("jungle.jpg") bottom;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +52,7 @@ header {
 
 .navItems {
   width: 225px;
-  height: 50px;
+  height: auto;
 }
 
 .navItems > a {
@@ -68,9 +69,7 @@ header {
 
 .navItems > a:hover {
   color: cornsilk;
-  font-size: 40px;
-  margin: 0 10px;
-  transform: translate(0, -3px);
+  transform: scale(1.1) rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 
@@ -95,11 +94,13 @@ header {
 }
 
 #about {
-  background: linear-gradient(rgba(54, 210, 54, 0.95),rgba(54, 210, 54, 0.95)),url('jungle.jpg') center;
+  background: linear-gradient(rgba(54, 210, 54, 0.95), rgba(54, 210, 54, 0.95)),
+    url("jungle.jpg") center;
 }
 
 #projects {
-  background: linear-gradient(rgba(183, 108, 11, 0.7),rgba(183, 108, 11,0.7)),url('code.jpg');
+  background: linear-gradient(rgba(183, 108, 11, 0.7), rgba(183, 108, 11, 0.7)),
+    url("code.jpg");
   color: rgb(183, 209, 180);
 }
 
@@ -125,8 +126,8 @@ header {
 
 .projectsContainer > a > p {
   color: pink;
-background-color: transparent;  
-font-size: 40px;
+  background-color: transparent;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   margin: none;
@@ -158,7 +159,7 @@ font-size: 40px;
 
 .popupBoxes {
   display: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   background-color: rgb(144, 77, 88);
 }
@@ -210,14 +211,16 @@ footer > h2 {
   border: none;
   margin: 0 15px;
   font-size: 40px;
+  transform: scale(1.2) rotate(0deg);
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
-  transform: rotate(0deg);
-  /* transition: all 0.2s ease-in-out; */
 }
 
 .linksContainer > a:hover {
-  font-size: 40px;
-  margin: 0 17px;
-  transform: rotate(45deg);
- transition: all 0.2s ease-in-out; 
+  transform: scale(0.9) rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.fo {
+  cursor: pointer;
 }
