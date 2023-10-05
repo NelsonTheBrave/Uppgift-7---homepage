@@ -94,10 +94,14 @@ header {
   font-size: 45px;
 }
 
+/* ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ABOUT ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ */
+
 #about {
   background: linear-gradient(rgba(54, 210, 54, 0.95), rgba(54, 210, 54, 0.95)),
     url("jungle.jpg") center;
 }
+
+/* ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ PROJECTS ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ */
 
 #projects {
   background: linear-gradient(rgba(183, 108, 11, 0.7), rgba(183, 108, 11, 0.7)),
@@ -142,6 +146,8 @@ header {
   transform: scale(1.2) rotate(-4deg);
   transition: all 1s ease-out;
 }
+
+/* ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ EXPERIENCE ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ */
 
 #experience {
   background-color: rgb(150, 10, 10);
